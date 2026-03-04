@@ -345,7 +345,10 @@ function performCalculation(value) {
         // --- End of Add to History ---
       }
     } catch (error) {
-      alert('Invalid Expression');
+      if ($('#inputField').val().includes("="))
+         {alert("The '=' key is not needed when typing with the keyboard - please use 'Enter' to calculate your equation instead")}
+      else {
+      alert('Invalid Expression');}
     }
   } else {
     $('#inputField').val($('#inputField').val() + value);

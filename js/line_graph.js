@@ -221,8 +221,13 @@ var myChart = new Chart(ctx, {
         legend: {
             position: 'right',  // moves the legend to the right
             labels: {
-                fontSize: 16  // change this to whatever size you want
-            }
+                fontSize: 16 ,
+                fontColor: '#ffffff',
+                padding: 15, // change this to whatever size you want
+            },
+            onClick: null
+
+            
         }
     }
 });

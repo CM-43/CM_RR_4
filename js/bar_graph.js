@@ -194,7 +194,7 @@ var myChart = new Chart(ctx, {
             borderColor: 'rgba(54, 162, 235, 1)',
             borderWidth: 1
         }
-    ]
+        ]
     },
     options: {
         responsive: true,
@@ -208,8 +208,12 @@ var myChart = new Chart(ctx, {
         legend: {
             position: 'right',  // moves the legend to the right
             labels: {
-                fontSize: 16  // change this to whatever size you want
-            }
+                fontSize: 16,  // change this to whatever size you want
+                fontColor: '#ffffff',
+                padding: 15,
+            },
+            onClick: null
+
         }
     }
 });

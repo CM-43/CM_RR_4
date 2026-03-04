@@ -217,9 +217,13 @@ var myChart = new Chart(ctx, {
         responsive: true,
         maintainAspectRatio: true,
         legend: {
+            position: 'right',
             labels: {
-                fontSize: 12  // change this to whatever size you want
-            }
+                fontSize: 12,
+                fontColor: '#ffffff',
+                padding: 15,
+            },
+            onClick: null
         }
     }
 });
