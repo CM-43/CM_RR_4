@@ -229,23 +229,23 @@ var myChart = new Chart(ctx, {
 });
 
 function updateChart() {
-    var winterBefore = document.getElementById('7. Graph - Winter - Before').value || 0;
-    var winterAfter = document.getElementById('7. Graph - Winter - After').value || 0;
-    var winterEnd = document.getElementById('7. Graph - Winter - End').value || 0;
-    var springBefore = document.getElementById('7. Graph - Spring - Before').value || 0;
-    var springAfter = document.getElementById('7. Graph - Spring - After').value || 0;
-    var springEnd = document.getElementById('7. Graph - Spring - End').value || 0;
+    var winterBefore = document.getElementById('7. Graph - Add deer in Winter - Pop. before Winter').value || 0;
+    var winterAfter = document.getElementById('7. Graph - Add deer in Winter - Pop. after Winter').value || 0;
+    var winterEnd = document.getElementById('7. Graph - Add deer in Winter - Pop. end of Y1').value || 0;
+    var springBefore = document.getElementById('7. Graph - Add deer in Spring - Pop. before Winter').value || 0;
+    var springAfter = document.getElementById('7. Graph - Add deer in Spring - Pop. after Winter').value || 0;
+    var springEnd = document.getElementById('7. Graph - Add deer in Spring - Pop. end of Y1').value || 0;
 
     myChart.data.datasets[0].data = [winterBefore, winterAfter, winterEnd, springBefore, springAfter, springEnd];
     myChart.update();
 }
 // Add input event listeners to all input fields
-document.getElementById('7. Graph - Winter - Before').addEventListener('input', updateChart);
-document.getElementById('7. Graph - Winter - After').addEventListener('input', updateChart);
-document.getElementById('7. Graph - Winter - End').addEventListener('input', updateChart);
-document.getElementById('7. Graph - Spring - Before').addEventListener('input', updateChart);
-document.getElementById('7. Graph - Spring - After').addEventListener('input', updateChart);
-document.getElementById('7. Graph - Spring - End').addEventListener('input', updateChart);
+document.getElementById('7. Graph - Add deer in Winter - Pop. before Winter').addEventListener('input', updateChart);
+document.getElementById('7. Graph - Add deer in Winter - Pop. after Winter').addEventListener('input', updateChart);
+document.getElementById('7. Graph - Add deer in Winter - Pop. end of Y1').addEventListener('input', updateChart);
+document.getElementById('7. Graph - Add deer in Spring - Pop. before Winter').addEventListener('input', updateChart);
+document.getElementById('7. Graph - Add deer in Spring - Pop. after Winter').addEventListener('input', updateChart);
+document.getElementById('7. Graph - Add deer in Spring - Pop. end of Y1').addEventListener('input', updateChart);
 
 $(document).on('click', '.remove', function () {
     $(this).parent().next('hr').remove();
